@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <MapComponent :location="[-23.548, -46.63]" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MapComponent from './components/Map.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MapComponent
   }
 }
 </script>
